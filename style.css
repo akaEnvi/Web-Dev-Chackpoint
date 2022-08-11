@@ -8,7 +8,8 @@
 :root {
   --thema-color: hsl(268, 75%, 44%);
   --light-shadow: hsl(268, 58%, 55%);
-  --neutral: white;
+  --neutral: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 41%);
 }
 
 html {
@@ -27,8 +28,81 @@ main {
 
 /*-----Layout-----*/
 
+/*-----Header-----*/
+
 .header {
+  display: flex;
+  align-items: center;
+  font-size: 50%;
+
+  padding: 1.5rem;
+  gap: 2rem;
+
+  background-color: var(--thema-color);
+  box-shadow: 0 0.5rem 0 0 var(--light-shadow);
+}
+
+h1 {
+  color: var(--neutral);
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .menu-icon {
+  width: 3rem;
+  fill: var(--neutral);
+}
+
+/*-----Top-----*/
+
+.top-part {
+}
+
+h2 {
+  margin-top: 3rem;
+  color: var(--thema-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+h3 {
+  color: var(--text);
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/*-----selection bars-----*/
+
+.search {
+  border: 2px solid var(--thema-color);
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.search-icon {
+  fill: var(--thema-color);
+
+  position: absolute;
+  height: 5%;
+  right: 27.5%;
+}
+
+.selections {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  gap: 9.5rem;
+}
+.months {
+  border: 2px solid var(--thema-color);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.time {
+  border: 2px solid var(--thema-color);
+  border-radius: 5px;
+  padding: 0.2rem;
 }
