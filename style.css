@@ -21,6 +21,7 @@ html {
 body {
   background-color: var(--neutral);
   width: min(600px, 100%);
+  padding-bottom: 1rem;
   margin: 0 auto;
 }
 
