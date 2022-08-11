@@ -1,0 +1,34 @@
+/*-----Overall Sttings-----*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --thema-color: hsl(268, 75%, 44%);
+  --light-shadow: hsl(268, 58%, 55%);
+  --neutral: white;
+}
+
+html {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+body {
+  width: min(600px, 100%);
+  margin: 0 auto;
+}
+
+main {
+  padding-inline: 2rem;
+}
+
+/*-----Layout-----*/
+
+.header {
+}
+
+.menu-icon {
+}
